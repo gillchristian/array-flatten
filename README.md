@@ -7,21 +7,25 @@ Just a simple function to flatten an Array. Works well in both, the browser & no
 ### install
 
 ```bash
-npm i -S array-flatten
+npm i -S flat-array
 ```
 
 ### and use it
 
 ```javascript
-import flattenArray from 'array-flatten'
+import flattenArray from 'flat-array'
 // OR
-const flattenArray = require('array-flatten')
+const flattenArray = require('flat-array')
 
 const abcde = flattenArray(['a', ['b', 'c'], 'd', ['e']])
 console.log(abcde) // ['a', 'b', 'c', 'd', 'e']
+
+// NOTE: the result is shadow flatted, only the first lvl arrays are flattened
+const fooBar = flattenArray(['f', ['o', 'o'], ['b', ['a', 'r']]])
+console.log(fooBar) // ['f', 'o', 'o', 'b', ['a', 'r']]
 ```
 
-*NOTE*: it requires the [rest operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator) to work. If you are not transpiling your code with Babel's `es2015` preset (to work on the browser) or are using a node version older than 5, you will have to use the compiled version: `require('array-flatten/dist/array-flatten)'`.
+*NOTE*: it requires the [rest operator](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator) to work. If you are not transpiling your code with Babel's `es2015` preset (to work on the browser) or are using a node version older than 5, you will have to use the compiled version: `require('flat-array/dist/flat-array)'`.
 
 ### behavior
 

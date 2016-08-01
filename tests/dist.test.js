@@ -1,7 +1,7 @@
 import test from 'ava'
 import deepFreeze from 'deep-freeze-strict'
 
-import flattenArray from '../dist/array-flatten'
+import flattenArray from '../dist/flat-array'
 
 test('returns a flattened array', t => {
   const arr = [['a', 'b', 'c'], ['d', 'e'], 'd']
