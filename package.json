@@ -2,7 +2,7 @@
   "name": "flat-array",
   "version": "0.1.1",
   "description": "Flatten an array",
-  "main": "index.js",
+  "main": "dist/flat-array.js",
   "scripts": {
     "test": "npm run lint && ava -v 'tests/**/*.test.js'",
     "ava:watch": "ava -v -w 'tests/**/*.test.js'",
