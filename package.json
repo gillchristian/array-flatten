@@ -1,6 +1,6 @@
 {
   "name": "flat-array",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Flatten an array",
   "main": "dist/flat-array.js",
   "scripts": {
